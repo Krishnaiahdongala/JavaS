@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+ <div id="divselect"></div>
+
+<ul id="parent">
+    <li>
+     hello
+    </li>
+    <li id="secondli">
+     hiii
+    </li>
+</ul>
+
+
+
+    <script>
+
+     let divv=document.getElementById("divselect");
+     console.log(divv);
+     let h1create=document.createElement("h1");
+     console.log(h1create);
+     h1create.innerText="hello guys";
+     divv.appendChild(h1create);
+
+       
+   let licreated=document.createElement("li");
+   console.log(licreated);  
+   licreated.innerText="hello123"
+
+   let ulgetting=document.getElementById("parent");
+   console.log(ulgetting);
+
+   let secondli=document.getElementById("secondli");
+   console.log(secondli);
+
+   ulgetting.insertBefore(licreated,secondli);
+     
+    divv.appendChild(ulgetting);
+
+  divv.remove();
+
+let img=document.createElement("img");
+console.log(img);
+img.setAttribute("src","vijay pic.jpg");
+
+document.body.appendChild(img);
+divv.replaceWith(img);
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
